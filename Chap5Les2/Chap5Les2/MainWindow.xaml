@@ -1,0 +1,21 @@
+﻿<Window x:Class="Chap5Les2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <ControlTemplate TargetType="{x:Type Button}" x:Key="ButtonTemplate">
+            <Border BorderBrush="Chocolate" BorderThickness="3">
+                <Grid>
+                    <Rectangle Fill="RoyalBlue"></Rectangle>
+                    <Ellipse Fill="Red"></Ellipse>
+                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid>
+        <Button Template="{StaticResource ButtonTemplate}" Margin="112,123,91,116" Name ="Button1">
+            Button
+        </Button>
+    </Grid>
+</Window>
